@@ -20,8 +20,8 @@ module.exports = {
     find: [],
     get: [],
     create: [...productSchema.hooks],
-    update: [],
-    patch: [],
+    update: [...productSchema.hooks],
+    patch: [...productSchema.hooks],
     remove: []
   },
 
