@@ -11,7 +11,7 @@ const productSchema = new Schema.Schema({
   price: { type: Number, required: true },
   description: { type: String },
   inventoryActual: { type: Number, default: 0 },
-  supplier: { type: String, required: false, default: null },
+  supplier: { type: String, required: false },
 });
 
 
