@@ -12,8 +12,11 @@ const productSchema = new Schema.Schema({
   description: { type: String },
   inventoryActual: { type: Number, default: 0 },
   supplier: { type: String, required: false },
+  removed: { type: Boolean },
+  onlineStatus: { type: Number },
+  notes: { type: String },
+  categId: { type: Number },
 });
-
 
 module.exports = {
   before: {
